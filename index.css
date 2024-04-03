@@ -1,0 +1,147 @@
+//32
+// let map = new Map();
+// let arr1 = [1, 2];
+// let arr2 = [3, 4];
+// let arr3 = [5, 6];
+
+// map.set(arr1, 'data1');
+// map.set(arr2, 'data2');
+// map.set(arr3, 'data3');
+
+// console.log(map.get(arr1)); 
+// console.log(map.get(arr2)); 
+// console.log(map.get(arr3)); 
+
+
+// let map = new Map();
+// let obj1 = {name: 'obj1', value: [1, 2]};
+// let obj2 = {name: 'obj2', value: [3, 4]};
+// let obj3 = {name: 'obj3', value: [5, 6]};
+
+// map.set(obj1, obj1.value);
+// map.set(obj2, obj2.value);
+// map.set(obj3, obj3.value);
+
+// console.log(map.get(obj1));
+// console.log(map.get(obj2)); 
+// console.log(map.get(obj3)); 
+
+//35
+
+// let map = new Map();
+
+// let keys = [...map.keys()];
+
+// for (let key of keys) {
+//     console.log(key);
+// }
+
+
+// let map = new Map();
+
+// let values = [...map.values()];
+
+// for (let value of values) {
+//     console.log(value);
+// }
+
+
+// //36
+// let elems = document.querySelectorAll('p');
+// let map = new Map();
+// let i = 1;
+
+// for (let elem of elems) {
+//   map.set(elem, i++);
+//   elem.addEventListener('click', function() {
+//     this.textContent += map.get(this);
+//   });
+// }
+
+
+// let inputs = document.querySelectorAll('input');
+// let values = new Map();
+
+// for (let input of inputs) {
+//   input.addEventListener('keydown', function(event) {
+//     if (event.keyCode === 13) {
+//       values.set(this, this.value);
+//       this.value = '';
+//     }
+//   });
+  
+//   input.addEventListener('blur', function() {
+//     console.log(Array.from(values.values()));
+//   });
+// }
+
+// 37
+// let set = new Set();
+
+// set.add(1);
+// set.add(2);
+// set.add(3);
+
+// console.log(set); 
+
+// 38
+// let set = new Set([1, 2, 3]);
+
+// let set = new Set([1, 2, 3]);
+// set.add(2);
+// console.log(set); 
+
+// 39
+// let set = new Set([1, 2, 3]);
+// console.log(set.size); 
+
+
+// let set = new Set([1, 2, 3]);
+// console.log(set.has(3)); 
+// console.log(set.has(4)); 
+
+// 40
+// let set = new Set();
+
+// set.add(1);
+// set.add(2);
+// set.add(3);
+
+// let sum = 0;
+// for (let elem of set) {
+//   sum += elem;
+// }
+// console.log(sum); // выводит 6
+
+// 41
+// let set = new Set([1, 2, 3]);
+// let arr = [...set];
+// console.log(arr); // выводит [1, 2, 3]
+
+
+// let arr = [1, 2, 3];
+// let set = new Set(arr);
+// console.log(set); // выводит Set(3) { 1, 2, 3 }
+
+// 42
+// function removeDuplicates(arr) {
+//     return [...new Set(arr)];
+// }
+
+
+// 43
+// let button = document.querySelector('button');
+// let elems = document.querySelectorAll('p');
+// let set = new Set();
+
+// for (let elem of elems) {
+//   elem.addEventListener('click', function() {
+//     set.add(this);
+//   });
+// }
+
+// button.addEventListener('click', function() {
+//   for (let elem of set) {
+//     elem.textContent = elem.textContent + '!';
+//   }
+// });
